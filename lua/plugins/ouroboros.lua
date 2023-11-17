@@ -1,4 +1,5 @@
 return
-    {        -- Ouroboros
-      'jakemason/ouroboros.nvim',
-    }       -- Ouroboros End
+{ -- Ouroboros
+  'jakemason/ouroboros.nvim',
+} -- Ouroboros End
+

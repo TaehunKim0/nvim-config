@@ -1,6 +1,6 @@
 return
-{                            -- snippy plugin setup
-  'dcampos/nvim-snippy',     -- nvim snippy
+{                        -- snippy plugin setup
+  'dcampos/nvim-snippy', -- nvim snippy
   dependencies =
   {
     'dcampos/cmp-snippy',

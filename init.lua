@@ -46,7 +46,7 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable",     -- latest stable release
+    "--branch=stable", -- latest stable release
     lazypath,
   })
 end
@@ -70,3 +70,5 @@ require("lazy").setup( -- all vim plugin setup
     }
   }
 )
+
+vim.keymap.set('n', '<F2>', ':lua vim.lsp.buf.format()<CR>')
