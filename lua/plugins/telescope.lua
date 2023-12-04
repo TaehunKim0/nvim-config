@@ -9,11 +9,12 @@ return
   {
     pickers = {
       find_files = {
-        --theme = "dropdown",
+        --theme = "minimal",
       }
     },
     defaults =
     {
+      theme = "minimal",
       vimgrep_arguments =
       {
         "rg",
