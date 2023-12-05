@@ -35,6 +35,11 @@ return {
         label = '[Lsp] Find Definition',
         cmd = 'lua vim.lsp.buf.definition()',
       },
+      {
+        label = '[Outline] Open Outline',
+        cmd = 'Outline',
+      },
+
     }
   end
 }

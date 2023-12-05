@@ -39,6 +39,8 @@ vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
 
+vim.o.clipboard = 'unnamed'
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -71,4 +73,20 @@ require("lazy").setup( -- all vim plugin setup
   }
 )
 
+-- format
 vim.keymap.set('n', '<F2>', ':lua vim.lsp.buf.format()<CR>')
+vim.keymap.set('n', '<F3>', ':ClangFormat<CR>')
+
+-- auto complete
+vim.keymap.set('n', '<c-h>', ':lua vim.lsp.buf.hover()<CR>')
+vim.keymap.set('i', '<c-h>', ':lua vim.lsp.buf.hover()<CR>')
+
+-- definition
+vim.keymap.set('n', '<F10>', ':lua vim.lsp.buf.definition()<CR>')
+vim.keymap.set('i', '<F10>', ':lua vim.lsp.buf.definition()<CR>')
+
+-- CmdPalette
+vim.keymap.set('n', '<c-p>', ':CmdPalette<CR>')
+
+-- cpp header switch
+vim.keymap.set('n', '<c-j>', ':ClangdSwitchSourceHeader<CR>')
