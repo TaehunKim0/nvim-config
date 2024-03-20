@@ -39,7 +39,10 @@ return {
         label = '[Outline] Open Outline',
         cmd = 'Outline',
       },
-
+      {
+        label = '[Trouble] Check trouble',
+        cmd = 'Trouble',
+      },
     }
   end
 }
