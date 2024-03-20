@@ -43,6 +43,10 @@ return {
         label = '[Trouble] Check trouble',
         cmd = 'Trouble',
       },
+      {
+        label = '[Cargo] cargo run',
+        cmd = 'TermExec cmd="cargo run" go_back=0',
+      }
     }
   end
 }
