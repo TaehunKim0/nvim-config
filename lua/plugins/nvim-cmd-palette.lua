@@ -36,6 +36,10 @@ return {
         cmd = 'lua vim.lsp.buf.definition()',
       },
       {
+        label = '[Lsp] Formating',
+        cmd = 'lua vim.lsp.buf.format()',
+      },
+      {
         label = '[Outline] Open Outline',
         cmd = 'Outline',
       },

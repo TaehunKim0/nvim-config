@@ -13,6 +13,15 @@ return
     "mrded/nvim-lsp-notify",
   },
 
+  init = function() 
+      vim.diagnostic.config({
+      virtual_text = true,
+      signs = true,
+      underline = true,
+      update_in_insert = false,
+      severity_sort = false,
+    })end,
+
   config = function()
     require 'neodev'.setup {}
     local lspconfig = require 'lspconfig'

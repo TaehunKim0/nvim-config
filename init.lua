@@ -22,14 +22,6 @@ vim.opt.fillchars:append {
 }
 vim.o.wrap = false
 
-vim.diagnostic.config({
-  virtual_text = false,
-  signs = true,
-  underline = true,
-  update_in_insert = true,
-  severity_sort = false,
-})
-
 -- show trailing whitespace
 vim.o.list = true
 vim.o.listchars = 'trail:·,tab:  '
