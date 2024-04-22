@@ -74,8 +74,8 @@ vim.keymap.set('n', '<c-h>', ':lua vim.lsp.buf.hover()<CR>')
 vim.keymap.set('i', '<c-h>', ':lua vim.lsp.buf.hover()<CR>')
 
 -- definition
-vim.keymap.set('n', '<F10>', ':lua vim.lsp.buf.definition()<CR>')
-vim.keymap.set('i', '<F10>', ':lua vim.lsp.buf.definition()<CR>')
+--vim.keymap.set('n', '<F10>', ':lua vim.lsp.buf.definition()<CR>')
+--vim.keymap.set('i', '<F10>', ':lua vim.lsp.buf.definition()<CR>')
 
 -- CmdPalette
 vim.keymap.set('n', '<c-p>', ':CmdPalette<CR>')

@@ -50,7 +50,25 @@ return {
       {
         label = '[Cargo] cargo run',
         cmd = 'TermExec cmd="cargo run" go_back=0',
-      }
+      },
+      {
+        label = '[Cargo] cargo run with back trace',
+        cmd = 'TermExec cmd="RUST_BACKTRACE=1 cargo run" go_back=0',
+      },
+      {
+        label = '[search] ripgrep',
+        callback = function()
+          require 'rgflow'.open_blank('')
+        end
+      },
+      {
+        label = '[search] all files',
+        callback = require 'spectre'.open
+      },
+      {
+        label = '[search] current file',
+        callback = require 'spectre'.open_file_search
+      },
     }
   end
 }
